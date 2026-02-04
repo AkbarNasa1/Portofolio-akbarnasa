@@ -8,7 +8,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-# Nginx serve static
+# Nginx serve 
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
